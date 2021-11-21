@@ -22,6 +22,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #FFFFFF;
     width: 100vw;
+    height: 3008px;
 }
 
 header {
@@ -34,6 +35,17 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000033;
+    position: absolute;
+    z-index: 1;
 }
 
 .navigation {
@@ -44,6 +56,8 @@ header {
     align-items: center;
     padding: 0 165px;
     align-self: stretch;
+    z-index: 2;
+    border-bottom: 2px solid var(--white2,white);
 }
 
 .menu--elements {
@@ -58,8 +72,18 @@ header {
     padding: 0;
 }
 
+.menu__element {
+    color: var(--basic-white,white);
+    width: 128px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu__element:hover {
     background-color: var(--white2, transparent);
+    cursor: pointer;
 }
 
 .logo {
@@ -88,7 +112,7 @@ header {
     font-size: 35px;
 }
 
-.header--container {
+.header--text-container {
     color: var(--basic-white,white);
     width: 1046px;
     height: 297px;
@@ -96,6 +120,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .company--name {
@@ -144,15 +169,15 @@ header {
     justify-content: center;
 }
 
-.menu {
-
+.arrow {
+    background-color: var(--basic-red,red);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    box-sizing: border-box;
+    padding: 17px 16.92px 16.38px 17px;
+    z-index: 2;
 }
-
-.menu__element {
-    color: var(--basic-white,white);
-}
-
-
 
 footer {
     background-color: #28272C;
