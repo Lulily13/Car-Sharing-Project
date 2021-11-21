@@ -21,6 +21,7 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #FFFFFF;
+    width: 100vw;
 }
 
 header {
@@ -29,7 +30,62 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    background-color: var(--basic-gray,transparent);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 165px;
+    align-self: stretch;
+}
+
+.menu--elements {
+    height: 88px;
+    width: 486px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--basic-white,white);
+    padding: 0;
+}
+
+.menu__element:hover {
+    background-color: var(--white2, transparent);
+}
+
+.logo {
+    order: -1;
+    height: 47px;
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--icon {
+    height: 35px;
+    width: 31px;
+}
+
+.car {
+    color: var(--basic-red,red);
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.sharing {
+    color: var(--basic-white,white);
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .header--container {
