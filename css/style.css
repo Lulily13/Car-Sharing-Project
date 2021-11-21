@@ -2,3 +2,22 @@
     margin: 0;
 }
 
+:root {
+    --basic-gray: #00000066;
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --white2: #FFFFFF33;
+    --basic-red: #FF0000;
+    --gray2: #00000040;
+    --basic-pink: #FF00004D;
+    --white3: #FFFFFF29;
+    --gray3: #6A6A6A;
+    --black2: #28272C;
+    --gray4: #B2B2B2;
+    --gray5: #D1D1D1;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
